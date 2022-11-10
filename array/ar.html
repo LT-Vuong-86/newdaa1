@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    
+</head>
+<body>
+    <input type="text" id="name">
+    <button id="up" onclick="inten()">ok</button>
+    <table boder="1">
+        <tr>
+            <th>STT</th>
+            <th>Tên Sản Phẩm</th>
+            <th colspan="2" >Mặt hàng</th>
+        </tr>
+  
+    <tbody id="result">
+
+    </tbody>
+</table>
+
+    <script >
+        // let a=[2, 3, 1, 7, 9, 2, 4, 6, 2];
+        // alert(a.length);
+      
+        // document.write(a.join('-')+' ')
+        // document.write(a);
+        let mathang= [];
+function inten(){
+    let name= document.getElementById('name').value;
+    mathang.push(name);
+    document.getElementById('result').innerHTML += "<tr>"+
+    "<td>"+ mathang.length +"</td>" +
+         "<td>"+ name+ "</td>"+
+    "<td><button>sửa<button></td>"+
+        "<td><button>Xóa<button></td>"+
+            "<tr>"
+
+}
+       
+    </script>
+</body>
+</html>

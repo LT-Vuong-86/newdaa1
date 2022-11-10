@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <style>
+        span{color: aqua;}
+    </style>
+</head>
+<body>
+    <form action="" onsubmit="return bang()">
+        Tài Khoản: <input type="text" placeholder="nhập tên đăng nhập" ><br>
+        <span id="stk"></span><br>
+        Mật Khẩu: <input type="password" placeholder="mật khẩu " id="MK"> <br>
+        <span id="SMK"></span><br>
+        <input type="submit" value="Đăng Ký" onclick="">
+        
+    </form>
+    <script >
+        function bang(){
+          let TK=document.getElementById('stk').value;
+          let MK=document.getElementById('SMK').value;
+        let text;
+          if(TK == "" || TK == null){
+            text = "không được để trống";
+    }
+    else{
+        text= "";
+    }
+    document.getElementById('stk').innerHTML="không được để trống";
+    if(MK == "" || MK == null){
+document.getElementById('SMK').innerHTML="ko để trống";
+        return false;
+    }
+    else {
+        document.getElementById('SMK').innerHTML="";
+        return true;
+    }
+}
+    </script>
+</body>
+</html>
