@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+  <script>
+//     $(document).ready(function(){
+//         $("#click").click(function(){
+//             $("span").hide();
+//         });
+//     });
+//     $(document).ready(function(){             //dblclick bấm hai lần làm gì đó
+// //mouseenter di chuyển chuột vào thì lm j đó
+// //mouseleave rời khỏi vị trí  di chuyển chuột
+//         $("span").mouseenter(function(){
+//             alert("xinchao");
+//         });
+        
+//     });
+
+//     $(document).ready(function(){
+//         $("span").mouseleave(function(){
+//             alert("aonhay");
+//         });
+        
+//     });
+//     $(document).ready(function(){
+//         $("#click").mouseup(function(){
+//            document.write('ok luôn');
+//         });
+        
+//     });
+//     $(document).ready(function(){
+//         $("#ok").mousedown(function(){
+//             document.write('vd nao');
+//         });
+        
+//     });
+//     $(document).ready(function(){
+//         $("#ok").hover(function(){
+//             document.write('mousemove'); 
+//         });
+        
+//     });
+    // $(document).ready(function(){ //toggle bấm 1 phát ẩn 1 phát hiện
+    //     $("#ok").click(function(){ //hide bấm ẩn // show bấm 1 phát hiện
+    //         $('span').toggle(2000);
+    //     });
+    //     $('#click').click(function(){
+    //         $('span').hide(1000);
+    //     });
+    //     $('#click2').click(function(){
+    //         $('span').show(1000);
+    //     });
+    // });
+    //     $(document).ready(function(){
+    //         $('#ok').click(function(){
+    //             $('img').slideToggle("3000");
+    //         });
+    //         $('#ok').click(function(){
+    //             $('img').toggle(4000);
+    //         });
+    //     });
+    $(document).ready(function(){
+        $('#ok').click(function(){
+            $('img').toggle(3000);
+            $('span').toggle(3000)
+        });
+    });
+    
+  </script>
+  <h3>BÀi thử đầu tiên cua rthuw viện jQuery</h3>
+  <span> lại phải bị xóa nhanh lên anh dũng ạ đê xóa cho</span><br>
+  <img src="anh.jpg" alt=""><br>
+  <button id="ok"> click</button><br>
+  <button id="click">ok xóa </button><br>
+  <button id="click2">ok hiện 2</button>
+
+</body>
+</html>
